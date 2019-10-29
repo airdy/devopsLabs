@@ -23,7 +23,8 @@
     $ git push -u origin master
 	```
     
-2. Визначив хеш коміту ввівши команду
+2. Додав введені команди у файл README.md, закомітив до репозиторію.   
+3. Визначив хеш коміту ввівши команду
     ```console
 	ronix@DESKTOP-4AVNFCB MINGW64 /d/Study/GIT(technologii)/devopsLabs (master)
     $ git log

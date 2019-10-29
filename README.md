@@ -22,3 +22,15 @@
 	ronix@DESKTOP-4AVNFCB MINGW64 /d/Study/GIT(technologii)/devopsLabs (master)
     $ git push -u origin master
 	```
+    
+2. Визначив хеш коміту ввівши команду
+    ```console
+	ronix@DESKTOP-4AVNFCB MINGW64 /d/Study/GIT(technologii)/devopsLabs (master)
+    $ git log
+    commit 2a7ac6116947e17e16ef772e4878fb329fca6305 (HEAD -> master, origin/master)
+    Author: airdy <jalbot17@gmail.com>
+    Date:   Tue Oct 29 18:58:24 2019 +0200
+
+    lab1:second commit
+
+	```

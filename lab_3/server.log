@@ -1,0 +1,4 @@
+INFO 2019-11-12 17:33:02,444 root : Server available, server date: 2019-11-12 17:33:02
+INFO 2019-11-12 17:33:02,444 root : Monitoring page: : /health/
+INFO 2019-11-12 17:33:02,448 root : Server info: {'System': 'Linux', 'Release': '5.0.0-23-generic', 'Type': 'x86_64'}
+INFO 2019-11-12 17:33:02,448 root : Client info: python-requests/2.22.0

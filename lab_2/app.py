@@ -34,14 +34,22 @@ def main(url=''):
     return True
 
 
-def home_work():
-    # Ваш захист
+def home_work(m):
+    if "AM" in m:
+        print("AM")
+        return 0
+    elif "PM" in m:
+        print("PM")
+        return 0
+    else:
+        print("error")
+        return 1
     pass
 
 
 if __name__ == "__main__":
     a = "="*40
-    print(a + "\nРезультат без параметрів: ")
+    print(a + "\nРезультат без параметрiв: ")
     main()
     print(a + "\nРезультат з правильною URL: ")
     main('http://date.jsontest.com/')

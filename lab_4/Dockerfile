@@ -17,7 +17,7 @@ RUN git clone https://github.com/airdy/devopsLabs.git
 
 # Створюємо остаточну робочу папку з Веб-сайтом та копіюємо туди файли
 WORKDIR /app
-RUN cp -r /lab/devops_course/lab3/* .
+RUN cp -r /lab/devopsLabs/lab_3/* .
 
 # Інсталюємо всі залежності
 RUN pipenv install

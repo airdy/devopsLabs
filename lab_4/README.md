@@ -4,3 +4,10 @@
 4. Виконую білд (build) Docker імеджа та завантажую його до репозиторію. Для цього вказую правильну назву репозиторію та TAG. Команда буде виглядати так (де django - це тег)
     [Посилання на Docker Hub репозиторій](https://hub.docker.com/repository/docker/ron1x/lab_4);
     Посилання на скачування імеджа: `ron1x/lab_4:django`;
+5. Створюю ще один контейнер із програмою моніторингу для веб-сайту:
+   - створию ще один Dockerfile (Dockerfile.site) в якому поміщаю програму моніторингу;
+   - виконую білд даного імеджа, даючи йому тег `monitoring`, та заливаю його до репозиторію;
+   ```bash
+   docker build -f Dockerfile.site -t ron1x/lab_4:monitoring .
+   docker push ron1x/lab_4:monitoring
+   ```

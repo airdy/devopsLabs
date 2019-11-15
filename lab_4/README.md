@@ -5,9 +5,14 @@
     [Посилання на Docker Hub репозиторій](https://hub.docker.com/repository/docker/ron1x/lab_4);
     Посилання на скачування імеджа: `ron1x/lab_4:django`;
 5. Створюю ще один контейнер із програмою моніторингу для веб-сайту:
-   - створию ще один Dockerfile (Dockerfile.site) в якому поміщаю програму моніторингу;
+   - створюю ще один Dockerfile (Dockerfile.site) в якому поміщаю програму моніторингу;
    - виконую білд даного імеджа, даючи йому тег `monitoring`, та заливаю його до репозиторію;
    ```bash
    docker build -f Dockerfile.site -t ron1x/lab_4:monitoring .
    docker push ron1x/lab_4:monitoring
    ```
+   - запускаю два контейнери одночасно та перевіряю роботоспособність.
+   ```bash
+   docker run -it --name=monitoring --rm --net=host ron1x/lab_4:monitoring
+   ```
+   - роблю коміт Dockerfile та результатів роботи програми моніторинга запущеної з Docker контейнера.

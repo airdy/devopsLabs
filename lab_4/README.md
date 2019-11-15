@@ -15,4 +15,4 @@
    ```bash
    docker run -it --name=monitoring --rm --net=host ron1x/lab_4:monitoring
    ```
-   - роблю коміт Dockerfile та результатів роботи програми моніторинга запущеної з Docker контейнера.
+   - роблю коміт Dockerfile та результатів роботи програми моніторинга запущеної з Docker  контейнера.

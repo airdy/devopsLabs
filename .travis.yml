@@ -18,7 +18,6 @@ jobs:
       install:
         - cd ./lab_3/
         - pipenv install
-    - chmod +x ./scripts/travis-build.sh
       script: ./scripts/travis-build.sh
     - stage: "Build Lab 4."
       name: "Build Docker images & Home task"
@@ -27,9 +26,9 @@ jobs:
       install:
         - cd ./lab_4/
       script:
-        - docker build -t ron1x/devopsLabs:django-trevis .
+        - docker build -t ron1x/lab_4:django-trevis .
         - docker images
-        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker ron1x/devopsLabs:django-trevis; else echo "PR skip deploy"; fi
+        - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin; docker ron1x/lab_4:django-trevis; else echo "PR skip deploy"; fi
     - stage: "Build Lab 5."
       name: "Build and run Docker images via make"
       services:

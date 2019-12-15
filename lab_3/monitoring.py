@@ -33,6 +33,8 @@ def main(url):
 
 
 if __name__ == '__main__':
+'''
     while True:
         main("http://localhost:8000/health")
         sleep(60)
+'''
